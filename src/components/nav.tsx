@@ -1,4 +1,4 @@
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 
 const Navbar: React.FC = () => {
     return (
@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
     </div>*/}
                     <SignedIn>
                         {/* Mount the UserButton component */}
-                        <UserButton />
+                        <UserButton afterSignOutUrl="/" />
                     </SignedIn>
                     <SignedOut>
                         {/* Signed out users get sign in button */}

@@ -1,53 +1,54 @@
 {
-  "name": "orbit",
-  "version": "0.1.0",
-  "private": true,
-  "engines": {
-    "node": ">=21.1.0",
-    "npm": ">=8.1.0",
-    "yarn": "please-use-npm"
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "prettier": "prettier --write .",
-    "prepare": "husky install",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "dependencies": {
-    "@clerk/nextjs": "^4.29.3",
-    "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^18.4.4",
-    "@commitlint/config-conventional": "^18.4.4",
-    "@storybook/addon-essentials": "^7.6.7",
-    "@storybook/addon-interactions": "^7.6.7",
-    "@storybook/addon-links": "^7.6.7",
-    "@storybook/addon-onboarding": "^1.0.10",
-    "@storybook/blocks": "^7.6.7",
-    "@storybook/manager-api": "^7.6.7",
-    "@storybook/nextjs": "^7.6.7",
-    "@storybook/react": "^7.6.7",
-    "@storybook/test": "^7.6.7",
-    "@storybook/theming": "^7.6.7",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "eslint-plugin-storybook": "^0.6.15",
-    "husky": "^8.0.0",
-    "postcss": "^8",
-    "prettier": "3.1.1",
-    "storybook": "^7.6.7",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
-  }
+    "name": "orbit",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+        "node": ">=21.1.0",
+        "npm": ">=8.1.0",
+        "yarn": "please-use-npm"
+    },
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "prettier": "prettier --write .",
+        "prepare": "husky install",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build"
+    },
+    "dependencies": {
+        "@clerk/nextjs": "^4.29.3",
+        "framer-motion": "^10.18.0",
+        "next": "14.0.4",
+        "react": "^18",
+        "react-dom": "^18"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^18.4.4",
+        "@commitlint/config-conventional": "^18.4.4",
+        "@storybook/addon-essentials": "^7.6.7",
+        "@storybook/addon-interactions": "^7.6.7",
+        "@storybook/addon-links": "^7.6.7",
+        "@storybook/addon-onboarding": "^1.0.10",
+        "@storybook/blocks": "^7.6.7",
+        "@storybook/manager-api": "^7.6.7",
+        "@storybook/nextjs": "^7.6.7",
+        "@storybook/react": "^7.6.7",
+        "@storybook/test": "^7.6.7",
+        "@storybook/theming": "^7.6.7",
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "autoprefixer": "^10.0.1",
+        "eslint": "^8",
+        "eslint-config-next": "14.0.4",
+        "eslint-plugin-storybook": "^0.6.15",
+        "husky": "^8.0.0",
+        "postcss": "^8",
+        "prettier": "3.1.1",
+        "storybook": "^7.6.7",
+        "tailwindcss": "^3.3.0",
+        "typescript": "^5"
+    }
 }

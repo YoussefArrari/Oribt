@@ -12,7 +12,7 @@ export default function Home() {
                         initial={{ y: 40, opacity: 0.0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        className="w-full h-full flex justify-between  "
+                        className="w-full h-full flex justify-between items-start "
                     >
                         <h1 className="font-extrabold text-5xl">
                             Today&apos;s
@@ -20,14 +20,14 @@ export default function Home() {
                         <div className="flex gap-1">
                             <motion.div
                                 whileTap={{ scale: 0.9 }}
-                                className="w-fit h-fit hover:bg-[#F7F7F9] p-4 rounded-full cursor-pointer"
+                                className="w-fit h-fit hover:bg-[#F7F7F9] p-4  rounded-full cursor-pointer"
                             >
                                 <Image
                                     src="/params.svg"
                                     width={200}
                                     height={200}
                                     alt="Picture of the author"
-                                    className="w-6 h-fit"
+                                    className="w-5 h-fit"
                                 />
                             </motion.div>
                             <motion.div
@@ -39,7 +39,7 @@ export default function Home() {
                                     width={200}
                                     height={200}
                                     alt="Picture of the author"
-                                    className="w-6 h-fit"
+                                    className="w-5 h-fit"
                                 />
                             </motion.div>
                         </div>

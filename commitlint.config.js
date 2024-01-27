@@ -8,6 +8,11 @@
 // style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 // test: Adding missing tests or correcting existing tests
 
+
+//"node": ">=21.1.0",
+//"npm": ">=8.1.0",
+//"yarn": "please-use-npm"
+
 module.exports = {
     extends: ['@commitlint/config-conventional'],
     rules: {

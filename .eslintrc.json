@@ -17,5 +17,10 @@
                 "storybook/hierarchy-separator": "error"
             }
         }
-    ]
+    ],
+    "rules": {
+        "no-unused-vars": "warn",
+        "no-undef": "warn"
+        // other rules...
+    }
 }

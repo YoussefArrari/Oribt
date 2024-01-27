@@ -24,23 +24,27 @@ const Navbar: React.FC = () => {
             <motion.div
                 whileHover={{ x: 10, transition: { duration: 0.4 } }}
                 transition={{ duration: 0.4 }}
-                className=" bg-[#f6f8fa] shadow-xl w-fit h-fit gap-16 flex justify-between flex-col py-3 items-center rounded-full px-2"
+                className=" bg-[#f6f8fa] shadow-xl   w-fit h-fit gap-16 flex justify-between flex-col py-3 border border-stone-20000 items-center rounded-full px-2"
             >
                 <div className="flex flex-col gap-4 ">
-                    <div className="w-12 h-12 rounded-full bg-white flex justify-center items-center">
+                    <Link
+                        key={1}
+                        href={'/'}
+                        className="w-10 h-10 rounded-full border-4 border-stone-900 bg-white flex justify-center items-center"
+                    >
                         <Image
                             src="/orbit.svg"
                             width={200}
                             height={200}
                             alt="Picture of the author"
-                            className="w-7 h-fit"
+                            className="w-5 h-fit"
                         />
-                    </div>
+                    </Link>
                     {navLinks.map(({ href, label }) => (
                         <Link
                             key={href}
                             href={href}
-                            className={`  w-12 h-12 rounded-full text-white bg-white flex justify-center items-center `}
+                            className={`  w-10 h-10 rounded-full text-white bg-white flex justify-center items-center `}
                         >
                             <Image
                                 src={`/${
@@ -49,7 +53,7 @@ const Navbar: React.FC = () => {
                                 width={50}
                                 height={50}
                                 alt="Picture of the author"
-                                className="w-6 h-fit relative z-10 fill-white  "
+                                className="w-5 h-fit relative z-10 fill-white  "
                             />
                             {pathname === href && (
                                 <motion.div
@@ -58,13 +62,13 @@ const Navbar: React.FC = () => {
                                         stiffness: 60,
                                     }}
                                     layoutId="active"
-                                    className="absolute h-12 w-12 rounded-full bg-[#171A1E] "
+                                    className="absolute h-10 w-10 rounded-full bg-[#171A1E] "
                                 />
                             )}
                         </Link>
                     ))}
                 </div>
-                <div className="w-12 h-12 rounded-full text-white bg-white flex justify-center items-center">
+                <div className="w-10 h-10 rounded-full text-white bg-white flex justify-center items-center">
                     <UserButton afterSignOutUrl="/" />
                 </div>
             </motion.div>

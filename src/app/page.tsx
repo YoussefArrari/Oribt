@@ -5,7 +5,7 @@ export default function Home() {
         <>
             <div className="h-screen w-screen  ">
                 <Navbar />
-                <div
+                {/**   <div
                     aria-hidden
                     className="absolute top-0 w-[1000px] z-10 h-[400px] left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.15] pointer-events-none"
                     style={{
@@ -46,6 +46,7 @@ export default function Home() {
                         fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"
                     />
                 </svg>
+                */}
             </div>
         </>
     );

@@ -3,9 +3,12 @@ import { Habit } from '@prisma/client';
 import Image from 'next/image';
 import { getHabits } from '../../../../lib/habit';
 import { registerUser } from '../../../../lib/user';
-
+interface HabitsResponse {
+    habits: Habit[];
+}
 export default async function Home() {
-    const { habits } = (await getHabits()) as Habit;
+    const habitsResponse = (await getHabits()) as HabitsResponse;
+    const habits = habitsResponse.habits;
     console.log(habits);
     const user = await registerUser();
     return (
